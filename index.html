@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h3>Criação de Conta</h3>
+</head>
+<body>
+    <form method="GET" action="http://arquivo.devmedia.com.br/projeto/requisicao.php">
+        <fieldset>
+            <legend>Conta:</legend>
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email" required/>
+            </div>
+            <div>
+                <label>Senha:</label>
+                <input type="password" name="senha" required/>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <div>
+                <label>Nome:</label>
+                <input type="text" placeholder="Ex: Vinícius Amaral" name="nome" required/>
+            </div>
+            <div>
+                <label>Telefone:</label>
+                <input type="text" placeholder="Ex: (99) 12345-6789" name="telefone"/>
+            </div>
+            <div>
+                <label>Sexo:</label>
+                <input type="radio" value="Masculino" name="sexo"/>
+                <label>Masculino</label>
+                <input type="radio" value="Feminino" name="sexo"/>
+                <label>Feminino</label>
+                <input type="radio" value="PND" name="sexo" checked/>
+                <label>Prefiro não declarar</label>
+            </div>
+            <div>
+                <label>Data de nascimento:</label>
+                <input type="date" name="nascimento"/>
+            </div>
+            <div>
+                <label>Foto de Perfil:</label>
+                <input type="file" accept="image/*" name="imagem"/>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <div>
+                <label>Rua:</label>
+                <input type="text" name="rua"/>
+            </div>
+            <div>
+                <label>Complemento:</label>
+                <input type="text" name="complemento"/>
+            </div>
+            <div>
+                <label>Número:</label>
+                <input type="number" min="0" max="999" name="numero"/>
+            </div>
+            <div>
+                <label>Cidade:</label>
+                <input type="text" name="cidade"/>
+            </div>
+            <div>
+                <label>Estado:</label>
+                <select name="estado">
+                    <option value="AC">Acre</option>
+                    <option value="RJ">Alagoas</option>
+                    <option value="RJ">Amapá</option>
+                    <option value="RJ">Amazonas</option>
+                    <option value="RJ">Bahia</option>
+                    <option value="RJ">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Aproxime-se da gente!</legend>
+            <div>
+                <label>Como conheceu o site?</label>
+                <textarea placeholder="Explique para a gente como você conheceu o site" maxlength="256" name="forma_conheceu"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" checked name="receber_novidades"/>
+                <label>Desejo receber novidades por e-mail</label>
+            </div>
+        </fieldset>
+        <input type="submit" value="Criar Conta" />
+    </form>
+</body>
+</html>
